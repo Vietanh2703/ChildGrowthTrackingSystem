@@ -1,4 +1,5 @@
 ﻿using ChildGTS_Group02.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace ChildGTS_Group02.DAL.Repositories
         public List<Blog> GetAllBlogs()
         {
             _context = new ChildGrowthTrackingSystemDBContext();
-            return _context.Blogs.ToList();
+            return _context.Blogs.Include(b => b.Author).ToList();
         }
     }
 }

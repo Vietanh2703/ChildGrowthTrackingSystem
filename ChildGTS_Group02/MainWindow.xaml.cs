@@ -1,4 +1,7 @@
-﻿using System.Text;
+﻿using ChildGTS_Group02.BLL.Services;
+using ChildGTS_Group02.DAL.Entities;
+using System.Collections.ObjectModel;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,6 +19,7 @@ namespace ChildGTS_Group02
     /// </summary>
     public partial class MainWindow : Window
     {
+        private BlogService _blogService = new();
         public MainWindow()
         {
             InitializeComponent();
@@ -34,6 +38,27 @@ namespace ChildGTS_Group02
                                         "FAQ",
                                         MessageBoxButton.OK,
                                         MessageBoxImage.Information);
+        }
+
+        private void BlogMainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoadDataToGrid();
+        }
+
+        private void BlogDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var selectedBlog = BlogDataGrid.SelectedItem as Blog;
+            if (selectedBlog != null)
+            {
+                BlogDetailWindow blogDetailWindow = new BlogDetailWindow(selectedBlog);
+                blogDetailWindow.ShowDialog();
+            }
+        }
+
+        private void LoadDataToGrid()
+        {
+            BlogDataGrid.ItemsSource = null;
+            BlogDataGrid.ItemsSource = _blogService.GetAllBlogs();
         }
     }
 }

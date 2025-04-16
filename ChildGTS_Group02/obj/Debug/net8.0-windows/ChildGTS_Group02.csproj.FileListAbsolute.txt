@@ -83,3 +83,5 @@ D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\
 D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\AdminWindow.baml
 D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\DoctorWindow.baml
 D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\MemberWindow.baml
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\BlogDetailWindow.baml
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\BlogDetailWindow.g.cs
