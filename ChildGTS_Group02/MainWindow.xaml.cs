@@ -27,5 +27,13 @@ namespace ChildGTS_Group02
             loginWindow.Show();
             this.Close();
         }
+
+        private void FAQButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("FAQ: Frequently Asked Questions\n\n1. How to use the system?\n2. How to add a child?\n3. How to contact support?",
+                                        "FAQ",
+                                        MessageBoxButton.OK,
+                                        MessageBoxImage.Information);
+        }
     }
 }

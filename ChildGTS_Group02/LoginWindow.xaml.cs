@@ -41,20 +41,27 @@ namespace ChildGTS_Group02
             if(user.RoleId == 1)
             {
                 AdminWindow adminWindow = new AdminWindow();
+                adminWindow.User = user;
                 adminWindow.Show();
                 this.Close();
             }
             else if (user.RoleId == 2)
             {
                 DoctorWindow doctorWindow = new DoctorWindow();
+                doctorWindow.User = user;
                 doctorWindow.Show();
                 this.Close();
             }
             else if (user.RoleId == 3)
             {
                 MemberWindow memberWindow = new MemberWindow();
+                memberWindow.User = user;
                 memberWindow.Show();
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Your trial has ended or your account is not existed.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

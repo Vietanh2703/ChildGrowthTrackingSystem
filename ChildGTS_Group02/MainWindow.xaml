@@ -26,15 +26,35 @@
                 Margin="0,20,20,0"
                 Name="LoginButton" Click="LoginPageButton_Click"/>
 
-        <!-- Information Boxes with ScrollViewer -->
+        <!-- Scrollable Content -->
         <ScrollViewer VerticalScrollBarVisibility="Auto"
-                      HorizontalAlignment="Center"
-                      VerticalAlignment="Center"
-                      Margin="20,100,20,20"
-                      Name="BlogScrollViewer">
-            <StackPanel Orientation="Vertical"
-                        Name="InfoBoxPanel">
-                <!-- Blog Box 1 -->
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Margin="20,80,20,80"
+                      Name="ContentScrollViewer">
+            <StackPanel Name="MainContentPanel">
+                <!-- System Information -->
+                <TextBlock Text="System Information"
+           FontSize="18"
+           FontWeight="Bold"
+           Margin="0,20,0,10"/>
+                <TextBlock Text="This system is designed to help track the growth and health of children. It provides tools for parents, doctors, and administrators to manage and monitor child growth records, health alerts, and more."
+           TextWrapping="Wrap"
+           Margin="0,0,0,20"/>
+                <TextBlock Text="Features:"
+           FontSize="16"
+           FontWeight="Bold"
+           Margin="0,0,0,5"/>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,20">
+                    <Run Text="• Track child growth records" />
+                    <LineBreak />
+                    <Run Text="• Manage health alerts" />
+                    <LineBreak />
+                    <Run Text="• Share data with doctors" />
+                    <LineBreak />
+                    <Run Text="• Access blogs and resources" />
+                </TextBlock>
+                <!-- Blog Boxes -->
                 <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="20" Margin="10" Height="150" Width="800">
                     <Grid>
                         <TextBlock Text="Blog Post 1: Tips for Child Growth"
@@ -52,7 +72,6 @@
                                 Name="BlogBox1DetailButton"/>
                     </Grid>
                 </Border>
-                <!-- Blog Box 2 -->
                 <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="20" Margin="10" Height="150" Width="800">
                     <Grid>
                         <TextBlock Text="Blog Post 2: Healthy Nutrition for Kids"
@@ -70,7 +89,6 @@
                                 Name="BlogBox2DetailButton"/>
                     </Grid>
                 </Border>
-                <!-- Blog Box 3 -->
                 <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="20" Margin="10" Height="150" Width="800">
                     <Grid>
                         <TextBlock Text="Blog Post 3: Importance of Regular Checkups"
@@ -90,5 +108,15 @@
                 </Border>
             </StackPanel>
         </ScrollViewer>
+
+        <!-- FAQ Button -->
+        <Button Content="FAQ"
+                Width="100"
+                Height="40"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,0,20,20"
+                Name="FAQButton"
+                Click="FAQButton_Click"/>
     </Grid>
 </Window>

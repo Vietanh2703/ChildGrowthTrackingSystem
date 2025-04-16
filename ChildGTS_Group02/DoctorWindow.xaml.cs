@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChildGTS_Group02.DAL.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace ChildGTS_Group02
     /// </summary>
     public partial class DoctorWindow : Window
     {
+        public User? User { get; set; }
         public DoctorWindow()
         {
             InitializeComponent();
