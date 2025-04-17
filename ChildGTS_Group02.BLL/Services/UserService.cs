@@ -12,6 +12,19 @@ namespace ChildGTS_Group02.BLL.Services
     {
         private UserRepository _userRepository = new UserRepository();
 
+        public List<User> GetAllUsers()
+        {
+            return _userRepository.GetAllUsers();
+        }
+        public List<User> GetAllUsersByRoleId(int roleId)
+        {
+            return _userRepository.GetAllUsersByRoleId(roleId);
+        }
+        public List<User> SearchUsersByRoleId(int roleId, string searchText)
+        {
+            return _userRepository.SearchUsersByRoleId(roleId, searchText.ToLower());
+        }
+
         public User? GetAccount(string email, string password)
         {
             return _userRepository.GetAccount(email, password);

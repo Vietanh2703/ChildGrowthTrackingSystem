@@ -11,6 +11,31 @@ namespace ChildGTS_Group02.DAL.Repositories
     {
         private ChildGrowthTrackingSystemDBContext? _context;
 
+        public List<User> GetAllUsers()
+        {
+            _context = new ChildGrowthTrackingSystemDBContext();
+            return _context.Users.ToList();
+        }
+
+        public List<User> GetAllUsersByRoleId(int roleId)
+        {
+            _context = new ChildGrowthTrackingSystemDBContext();
+            return _context.Users
+                .Where(u => u.RoleId == roleId)
+                .ToList();
+        }
+
+        public List<User> SearchUsersByRoleId(int roleId, string searchText)
+        {
+            _context = new ChildGrowthTrackingSystemDBContext();
+            return _context.Users
+                .Where(u => u.RoleId == roleId &&
+                            (u.FullName.ToLower().Contains(searchText) ||
+                             u.Email.ToLower().Contains(searchText) ||
+                             u.Phone.Contains(searchText)))
+                .ToList();
+        }
+
         public User? GetAccount(string email, string password)
         {
             _context = new ChildGrowthTrackingSystemDBContext();

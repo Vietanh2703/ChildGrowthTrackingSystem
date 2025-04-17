@@ -84,7 +84,7 @@ namespace ChildGTS_Group02 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ChildGTS_Group02;component/blogdetailwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ChildGTS_Group02;V1.0.0.0;component/blogdetailwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BlogDetailWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

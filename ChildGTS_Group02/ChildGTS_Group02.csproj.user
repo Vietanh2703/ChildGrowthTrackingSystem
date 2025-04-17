@@ -11,6 +11,9 @@
     <Compile Update="CreditCardWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="DoctorDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DoctorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
