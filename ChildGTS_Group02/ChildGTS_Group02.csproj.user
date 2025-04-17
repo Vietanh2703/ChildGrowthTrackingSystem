@@ -8,10 +8,19 @@
     <Compile Update="BlogDetailWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="CreditCardWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="DoctorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="InvoiceWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MembershipRegisterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MemberWindow.xaml.cs">

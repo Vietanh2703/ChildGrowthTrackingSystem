@@ -60,5 +60,11 @@ namespace ChildGTS_Group02
             BlogDataGrid.ItemsSource = null;
             BlogDataGrid.ItemsSource = _blogService.GetAllBlogs();
         }
+
+        private void BecomeMemberButton_Click(object sender, RoutedEventArgs e)
+        {
+            MembershipRegisterWindow membershipRegisterWindow = new MembershipRegisterWindow();
+            membershipRegisterWindow.ShowDialog();
+        }
     }
 }

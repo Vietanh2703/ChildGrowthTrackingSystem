@@ -16,5 +16,37 @@ namespace ChildGTS_Group02.BLL.Services
         {
             return _userRepository.GetAccount(email, password);
         }
+
+        public User? GetUserById(int userId)
+        {
+            return _userRepository.GetUserById(userId);
+        }
+
+        public bool RegisterUser(string email, string password, string fullName, string phone, string address, bool isTrial, out string errorMessage)
+        {
+            errorMessage = string.Empty;
+            // Check if the email already exists
+            if (_userRepository.EmailExists(email))
+            {
+                errorMessage = "A user with this email already exists.";
+                return false;
+            }
+
+            // Create a new user object
+            var user = new User
+            {
+                Email = email,
+                Password = password,
+                FullName = fullName,
+                Phone = phone,
+                Address = address,
+                IsTrial = isTrial,
+                RegistrationDate = DateTime.Now,
+                RoleId = 3
+            };
+
+            // Add user to the database
+            return _userRepository.AddUser(user);
+        }
     }
 }

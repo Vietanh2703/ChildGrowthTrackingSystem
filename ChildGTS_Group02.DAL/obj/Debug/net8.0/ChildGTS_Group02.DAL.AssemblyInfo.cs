@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChildGTS_Group02.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+71bc7b53593ca95c568bca722c86e427dfca9243")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0cd540606ca21c0e8c8d59060d78fafb5a048e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChildGTS_Group02.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChildGTS_Group02.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
