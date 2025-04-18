@@ -97,13 +97,35 @@ namespace ChildGTS_Group02
 
         private void SaveButton_Click(object sender, RoutedEventArgs e)
         {
-            var doctorCode = DoctorCodeTextBox.Text;
-            var email = EmailTextBox.Text;
-            var password = PasswordBox.Password;
-            var fullName = DoctorNameTextBox.Text;
-            var phone = PhoneTextBox.Text;
-            var address = AddressTextBox.Text;
+            var doctorCode = DoctorCodeTextBox.Text.Trim();
+            var email = EmailTextBox.Text.Trim();
+            var password = PasswordBox.Password.Trim();
+            var confirmPassword = ConfirmPasswordBox.Password.Trim();
+            var fullName = DoctorNameTextBox.Text.Trim();
+            var phone = PhoneTextBox.Text.Trim();
+            var address = AddressTextBox.Text.Trim();
             var positionId = int.Parse(PositionIdComboBox.SelectedValue.ToString());
+
+            // Kiểm tra các trường bắt buộc
+            if (string.IsNullOrWhiteSpace(doctorCode) ||
+                string.IsNullOrWhiteSpace(email) ||
+                string.IsNullOrWhiteSpace(password) ||
+                string.IsNullOrWhiteSpace(confirmPassword) ||
+                string.IsNullOrWhiteSpace(fullName) ||
+                string.IsNullOrWhiteSpace(phone) ||
+                string.IsNullOrWhiteSpace(address) ||
+                positionId == null)
+            {
+                MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            // Kiểm tra mật khẩu và xác nhận mật khẩu
+            if (password != confirmPassword)
+            {
+                MessageBox.Show("Password and Confirm Password do not match.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
             if (EditedDoctor == null)
                 _userService.CreateDoctor(doctorCode, email, password, fullName, phone, address, positionId);
             else
