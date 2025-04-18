@@ -29,7 +29,6 @@ namespace ChildGTS_Group02
             set
             {
                 _isFormValid = value;
-                // Notify the UI about the change
                 RegisterButton.IsEnabled = _isFormValid;
             }
         }

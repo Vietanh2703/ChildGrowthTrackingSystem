@@ -1,4 +1,5 @@
 ﻿using ChildGTS_Group02.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace ChildGTS_Group02.DAL.Repositories
         {
             _context = new ChildGrowthTrackingSystemDBContext();
             return _context.Users
-                .Where(u => u.RoleId == roleId)
+                .Where(u => u.RoleId == roleId).Include(u => u.Position)
                 .ToList();
         }
 
@@ -55,6 +56,20 @@ namespace ChildGTS_Group02.DAL.Repositories
             _context = new ChildGrowthTrackingSystemDBContext();
             _context.Users.Add(user);
             return _context.SaveChanges() > 0;
+        }
+
+        public bool UpdateUser(User user)
+        {
+            _context = new ChildGrowthTrackingSystemDBContext();
+            _context.Users.Update(user);
+            return _context.SaveChanges() > 0;
+        }
+
+        public void DeleteUser(User user)
+        {
+            _context = new ChildGrowthTrackingSystemDBContext();
+            _context.Users.Remove(user);
+            _context.SaveChanges();
         }
 
         public bool EmailExists(string email)

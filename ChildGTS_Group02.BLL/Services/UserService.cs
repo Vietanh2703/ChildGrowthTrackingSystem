@@ -61,5 +61,47 @@ namespace ChildGTS_Group02.BLL.Services
             // Add user to the database
             return _userRepository.AddUser(user);
         }
+
+        public bool CreateDoctor(string doctorCode, string email, string password, string fullName, string phone, string address, int positionId)
+        {
+            var user = new User
+            {
+                DoctorCode = doctorCode,
+                Email = email,
+                Password = password,
+                FullName = fullName,
+                Phone = phone,
+                Address = address,
+                PositionId = positionId,
+                RegistrationDate = DateTime.Now,
+                RoleId = 2
+            };
+            return _userRepository.AddUser(user);
+        }
+
+        public bool UpdateDoctor(int userId, string doctorCode, string email, string password, string fullName, string phone, string address, int positionId)
+        {
+            var user = _userRepository.GetUserById(userId);
+            if (user != null)
+            {
+                user.DoctorCode = doctorCode;
+                user.Email = email;
+                user.Password = password;
+                user.FullName = fullName;
+                user.Phone = phone;
+                user.Address = address;
+                user.PositionId = positionId;
+            }
+            return _userRepository.UpdateUser(user);
+        }
+
+        public void DeleteDoctor(int userId)
+        {
+            var user = _userRepository.GetUserById(userId);
+            if (user != null)
+            {
+                _userRepository.DeleteUser(user);
+            }
+        }
     }
 }

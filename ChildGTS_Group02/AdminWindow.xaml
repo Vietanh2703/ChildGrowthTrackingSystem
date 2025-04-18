@@ -78,7 +78,7 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Doctor Code" Binding="{Binding DoctorCode}" Width="100"/>
                     <DataGridTextColumn Header="Full Name" Binding="{Binding FullName}" Width="150"/>
-                    <DataGridTextColumn Header="Position" Binding="{Binding DoctorPosition}" Width="150" />
+                    <DataGridTextColumn Header="Position" Binding="{Binding Position.PositionName}" Width="150" />
                     <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="130"/>
                     <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="100"/>
                     <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="100"/>
@@ -93,7 +93,7 @@
             </StackPanel>
         </Grid>
         <Label x:Name="HelloMessageLabel" Content="Hello " HorizontalAlignment="Left" Margin="549,24,0,0" VerticalAlignment="Top" Height="48" Width="230" FontSize="20" RenderTransformOrigin="0.62,0.571"/>
-        <Button x:Name="LogoutButton" Content="Log out" HorizontalAlignment="Left" Margin="811,0,0,0" VerticalAlignment="Center" Height="56" Width="169" FontSize="16" Background="#FFE30404" Foreground="#FFF3F3F3"/>
+        <Button x:Name="LogoutButton" Content="Log out" HorizontalAlignment="Left" Margin="811,0,0,0" VerticalAlignment="Center" Height="56" Width="169" FontSize="16" Background="#FFE30404" Foreground="#FFF3F3F3" Click="LogoutButton_Click"/>
     </Grid>
 </Window>
 

@@ -31,6 +31,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[DoctorPosition]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[FeedbackRating]",
          "ObjectType": 0
       },

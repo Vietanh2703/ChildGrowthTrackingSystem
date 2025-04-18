@@ -5,8 +5,52 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChildGTS_Group02"
         mc:Ignorable="d"
-        Title="DoctorDetailWindow" Height="450" Width="800">
+        Title="DoctorDetailWindow" Height="750" Width="1145" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
-        
+        <Label x:Name="DoctorModeLabel" Content="Create | Update Doctor" HorizontalAlignment="Left" Height="80" Margin="31,20,0,0" VerticalAlignment="Top" Width="659" FontWeight="Heavy" FontSize="50"/>
+        <Rectangle HorizontalAlignment="Left" Height="584" Margin="38,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="875" Fill="#FFD7D7D7"/>
+
+        <!-- Doctor Code -->
+        <Label Content="Doctor Code:" HorizontalAlignment="Left" Height="45" Margin="58,120,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="DoctorCodeTextBox" HorizontalAlignment="Left" Height="45" Margin="226,120,0,0" VerticalAlignment="Top" Width="275"/>
+
+        <!-- Doctor Name -->
+        <Label Content="Doctor Name:" HorizontalAlignment="Left" Height="45" Margin="58,180,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="DoctorNameTextBox" HorizontalAlignment="Left" Height="45" Margin="226,180,0,0" VerticalAlignment="Top" Width="637" />
+
+
+        <!-- Email -->
+        <Label Content="Email:" HorizontalAlignment="Left" Height="45" Margin="58,240,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="EmailTextBox" HorizontalAlignment="Left" Height="45" Margin="226,240,0,0" VerticalAlignment="Top" Width="637"/>
+
+        <!-- Password -->
+        <Label x:Name="PasswordLabel" Content="Password:" HorizontalAlignment="Left" Height="45" Margin="58,300,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Height="45" Margin="226,300,0,0" VerticalAlignment="Top" Width="275"/>
+        <TextBox Name="PasswordTextBox" HorizontalAlignment="Left" Height="45" Margin="226,300,0,0" VerticalAlignment="Top" Width="275" Visibility="Collapsed" Text="{Binding Text, ElementName=PasswordBox, Mode=TwoWay}"/>
+
+        <!-- Confirm Password -->
+        <Label Content="Confirm Password:" HorizontalAlignment="Left" Height="45" Margin="58,360,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <PasswordBox x:Name="ConfirmPasswordBox" HorizontalAlignment="Left" Height="45" Margin="226,360,0,0" VerticalAlignment="Top" Width="275"/>
+        <TextBox Name="ConfirmPasswordTextBox" HorizontalAlignment="Left" Height="45" Margin="226,360,0,0" VerticalAlignment="Top" Width="275" Visibility="Collapsed" Text="{Binding Text, ElementName=ConfirmPasswordBox, Mode=TwoWay}"/>
+
+
+        <!-- Show Password -->
+        <CheckBox Content="Show Password" HorizontalAlignment="Left" Margin="226,420,0,0" VerticalAlignment="Top" Checked="ShowPassword_Checked" Unchecked="ShowPassword_Unchecked"/>
+
+        <!-- Position -->
+        <Label Content="Position:" HorizontalAlignment="Left" Height="45" Margin="58,480,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <ComboBox x:Name="PositionIdComboBox" HorizontalAlignment="Left" Height="45" Margin="226,480,0,0" VerticalAlignment="Top" Width="300" DisplayMemberPath="PositionName" SelectedValuePath="PositionId"/>
+
+        <!-- Phone -->
+        <Label Content="Phone:" HorizontalAlignment="Left" Height="45" Margin="58,540,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="PhoneTextBox" HorizontalAlignment="Left" Height="45" Margin="226,540,0,0" VerticalAlignment="Top" Width="300"/>
+
+        <!-- Address -->
+        <Label Content="Address:" HorizontalAlignment="Left" Height="45" Margin="58,600,0,0" VerticalAlignment="Top" Width="150" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="AddressTextBox" HorizontalAlignment="Left" Height="45" Margin="226,600,0,0" VerticalAlignment="Top" Width="637"/>
+
+        <!-- Buttons -->
+        <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Height="50" Margin="945,105,0,0" VerticalAlignment="Top" Width="165" Click="SaveButton_Click"/>
+        <Button x:Name="CloseButton" Content="Close" HorizontalAlignment="Left" Height="50" Margin="945,180,0,0" VerticalAlignment="Top" Width="165" Click="CloseButton_Click"/>
     </Grid>
 </Window>

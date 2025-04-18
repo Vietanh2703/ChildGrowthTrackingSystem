@@ -2,7 +2,6 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace ChildGTS_Group02.DAL.Entities;
 
@@ -12,28 +11,18 @@ public partial class User
 
     public int RoleId { get; set; }
 
-    [Required(ErrorMessage = "Email is required.")]
-    [EmailAddress(ErrorMessage = "Invalid email format.")]
+    public int? PositionId { get; set; }
+
     public string Email { get; set; }
 
-    [Required(ErrorMessage = "Password is required.")]
-    [MinLength(6, ErrorMessage = "Password must be at least 6 characters long.")]
     public string Password { get; set; }
 
-    [Required(ErrorMessage = "Full Name is required.")]
     public string FullName { get; set; }
 
-    [Required(ErrorMessage = "Phone is required.")]
-    [RegularExpression(@"^\d+$", ErrorMessage = "Phone number must contain only digits.")]
-    [MinLength(10, ErrorMessage = "Phone number must be at least 10 digits.")]
-    [MaxLength(10, ErrorMessage = "Phone number cannot exceed 10 digits.")]
     public string Phone { get; set; }
 
     public string DoctorCode { get; set; }
 
-    public string DoctorPosition { get; set; }
-
-    [Required(ErrorMessage = "Address is required.")]
     public string Address { get; set; }
 
     public DateTime? RegistrationDate { get; set; }
@@ -53,6 +42,8 @@ public partial class User
     public virtual ICollection<HealthAlert> HealthAlerts { get; set; } = new List<HealthAlert>();
 
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
+
+    public virtual DoctorPosition Position { get; set; }
 
     public virtual Role Role { get; set; }
 }

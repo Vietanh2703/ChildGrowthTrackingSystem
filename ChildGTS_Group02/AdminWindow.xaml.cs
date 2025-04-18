@@ -59,29 +59,41 @@ namespace ChildGTS_Group02
 
         private void CreateDoctorButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Create Doctor button clicked.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            DoctorDetailWindow doctorDetailWindow = new(User);
+            doctorDetailWindow.ShowDialog();
+            LoadDataToGrid();
         }
 
         private void UpdateDoctorButton_Click(object sender, RoutedEventArgs e)
         {
-            if (UsersDataGrid.SelectedItem == null)
+            User selectedUser = (User)UsersDataGrid.SelectedItem;
+            if (selectedUser == null)
             {
                 MessageBox.Show("Please select a doctor to update.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            MessageBox.Show("Update Doctor button clicked.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            DoctorDetailWindow doctorDetailWindow = new(User);
+            doctorDetailWindow.EditedDoctor = selectedUser;
+            doctorDetailWindow.ShowDialog();
+            LoadDataToGrid();
         }
 
         private void DeleteDoctorButton_Click(object sender, RoutedEventArgs e)
         {
-            if (UsersDataGrid.SelectedItem == null)
+            User selectedUser = (User)UsersDataGrid.SelectedItem;
+            if (selectedUser == null)
             {
                 MessageBox.Show("Please select a doctor to delete.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            MessageBox.Show("Delete Doctor button clicked.", "Info", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBoxResult result = System.Windows.MessageBox.Show("Are you sure you want to delete this doctor?",
+                "Delete confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.No)
+                return;
+            _userService.DeleteDoctor(selectedUser.UserId);
+            LoadDataToGrid();
         }
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
@@ -95,6 +107,13 @@ namespace ChildGTS_Group02
             }
             var filteredUsers = _userService.SearchUsersByRoleId(2, searchText);
             UsersDataGrid.ItemsSource = filteredUsers;
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }
