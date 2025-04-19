@@ -1,5 +1,6 @@
 ﻿using ChildGTS_Group02.DAL.Entities;
 using ChildGTS_Group02.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,5 +62,17 @@ namespace ChildGTS_Group02.BLL.Services
             // Add user to the database
             return _userRepository.AddUser(user);
         }
+
+        public List<User> GetDoctors() {
+
+            return _userRepository.GetDoctors();
+        
+        }
+
+        public async Task<User> GetUserByIdAsync(int userId)
+        {
+            return await _userRepository.GetUserByIdAsync(userId);
+        }
+
     }
 }

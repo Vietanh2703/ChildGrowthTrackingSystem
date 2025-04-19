@@ -1,0 +1,77 @@
+﻿<Window x:Class="ChildGTS_Group02.ChildFormWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ChildFormWindow" Height="Auto" Width="822" SizeToContent="Height">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Nội dung cuộn -->
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <!-- Các trường cơ bản -->
+                <TextBlock Text="Full Name" />
+                <TextBox x:Name="FullNameTextBox" />
+
+                <TextBlock Text="Date of Birth" />
+                <DatePicker x:Name="DateOfBirthPicker" />
+
+                <TextBlock Text="Gender" />
+                <ComboBox x:Name="GenderComboBox">
+                    <ComboBoxItem Content="Male"/>
+                    <ComboBoxItem Content="Female"/>
+                </ComboBox>
+
+                <TextBlock Text="Birth Weight (kg)" />
+                <TextBox x:Name="BirthWeightTextBox" />
+
+                <TextBlock Text="Birth Height (cm)" />
+                <TextBox x:Name="BirthHeightTextBox" />
+
+                <TextBlock Text="Profile Image Path" />
+                <TextBox x:Name="ProfileImageTextBox" />
+
+                <TextBlock Text="Medical Notes" />
+                <TextBox x:Name="MedicalNotesTextBox" Height="60"/>
+
+                <TextBlock Text="Select Parent" />
+                <ComboBox x:Name="ParentComboBox" 
+                  SelectedValuePath="UserId"
+                  DisplayMemberPath="FullName" />
+
+                <!-- Section bảng ghi tăng trưởng -->
+                <StackPanel x:Name="GrowthRecordWrapper" Visibility="Visible">
+                    <StackPanel x:Name="GrowthRecordSection">
+                        <TextBlock Text="Growth Records" Margin="20,20,0,0" FontWeight="Bold"/>
+                        <DataGrid x:Name="GrowthRecordDataGrid" AutoGenerateColumns="False" Height="200" Margin="0,20,0,0">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Record Date" Binding="{Binding RecordDate}" Width="*"/>
+                                <DataGridTextColumn Header="Height" Binding="{Binding Height}" Width="*"/>
+                                <DataGridTextColumn Header="Weight" Binding="{Binding Weight}" Width="*"/>
+                                <DataGridTextColumn Header="Head Circumference" Binding="{Binding HeadCircumference}" Width="*"/>
+                                <DataGridTextColumn Header="Measurement Type" Binding="{Binding MeasurementType}" Width="*"/>
+                                <DataGridTextColumn Header="Notes" Binding="{Binding Notes}" Width="*"/>
+                                <DataGridTextColumn Header="Doctor Name" Binding="{Binding DoctorName}" Width="*"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+
+                    <!-- Button nằm trong cùng StackPanel để điều khiển chung Visibility -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                        <Button Content="Add Growth Record" x:Name="AddGrowthbtn" Background="Blue" Foreground="White"
+                        Padding="10,5" Width="150" Height="29" Margin="10,0,0,0" Click="AddGrowthbtn_Click"/>
+                    </StackPanel>
+                </StackPanel>
+                <!-- ✅ Thẻ này bị thiếu ở bản gốc -->
+            </StackPanel>
+            <!-- ✅ Đóng StackPanel chính của ScrollViewer -->
+        </ScrollViewer>
+        <!-- Các nút hành động -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+              <Button Content="Back" x:Name="Backbtn" Background="Red" Foreground="White" Padding="10,5" Width="100" Height="29" Margin="10,0,0,0" Click="Backbtn_Click" />
+            <Button Content="Save" x:Name="Savebtn" Background="Green" Foreground="White" Padding="10,5" Width="100" Height="29" Margin="10,0,0,0" Click="Savebtn_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\
+D:\School\block3\PRJ\ChildGrowthTrackingSystem\ChildGTS_Group02\obj\Debug\net8.0-windows\
 ChildGTS_Group02
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02\App.xaml
-10806647657
+D:\School\block3\PRJ\ChildGrowthTrackingSystem\ChildGTS_Group02\App.xaml
+12-1876896223
 
-15-1683744581
-236-2097604778
-AdminWindow.xaml;BlogDetailWindow.xaml;CreditCardWindow.xaml;DoctorDetailWindow.xaml;DoctorWindow.xaml;InvoiceWindow.xaml;LoginWindow.xaml;MainWindow.xaml;MembershipRegisterWindow.xaml;MemberWindow.xaml;
+17743312074
+236-1065596901
+AdminWindow.xaml;BlogDetailWindow.xaml;ChildFormWindow.xaml;CreditCardWindow.xaml;DoctorDetailWindow.xaml;DoctorWindow.xaml;GrowthDataShareWindow.xaml;InvoiceWindow.xaml;LoginWindow.xaml;MainWindow.xaml;MembershipRegisterWindow.xaml;MemberWindow.xaml;
 
-False
+True
 

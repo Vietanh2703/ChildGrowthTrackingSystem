@@ -17,6 +17,9 @@
     <Compile Update="DoctorWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GrowthDataShareWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="InvoiceWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

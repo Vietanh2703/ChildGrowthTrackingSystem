@@ -19,6 +19,34 @@ namespace ChildGTS_Group02.BLL.Services
         {
             return _childRepository.GetChildById(childId);
         }
+
+        public async Task<List<Child>> GetAllChildrenAndParent()
+        {
+            return await _childRepository.GetAllChildrenAndParentAsync();
+        }
+
+        public async Task CreateChildren(Child child) {
+
+            await _childRepository.AddChildAsync(child);
         
-    }
+        }
+
+        public async Task DeleteChildren(int id) {
+
+            await _childRepository.DeleteChildAsync(id);
+        }
+
+        public async Task UpdateChildren(Child child) {
+            await _childRepository.UpdateChildAsync(child);
+        }
+
+
+
+        public async Task<  List<GrowthRecord>> GetChildRelatedData(int childId) {
+            return await _childRepository.GetChildRelatedDataAsync(childId);
+
+
+        }
+        
+        }
 }
