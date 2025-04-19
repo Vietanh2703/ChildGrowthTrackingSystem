@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChildGTS_Group02.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fc4353423e154a5a4964edeb770687c5b806e79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bb302496efece8892d898e0dd3d28d38965f0e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChildGTS_Group02.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChildGTS_Group02.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
