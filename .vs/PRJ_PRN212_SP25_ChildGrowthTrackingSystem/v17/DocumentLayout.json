@@ -1,58 +1,150 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\",
+  "WorkspaceRootPath": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\doctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.bll\\services\\doctorfeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|solutionrelative:childgts_group02.bll\\services\\doctorfeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.bll\\services\\feedbackratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|solutionrelative:childgts_group02.bll\\services\\feedbackratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\repositories\\feedbackratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\repositories\\feedbackratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\doctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\doctorwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\memberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\memberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\memberwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|solutionrelative:childgts_group02.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\doctorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\doctorwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\repositories\\doctorfeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\repositories\\doctorfeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\repositories\\growthrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\repositories\\growthrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.bll\\services\\growthrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|solutionrelative:childgts_group02.bll\\services\\growthrecordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\entities\\doctorfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\entities\\doctorfeedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|solutionrelative:childgts_group02.bll\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\efpt.config.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\entities\\healthalert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\entities\\healthalert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02.dal\\childgrowthtrackingsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\childgrowthtrackingsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\childgrowthtrackingsystemdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\code\\c#_dev\\session11-groupproject\\prj_prn212_sp25_childgrowthtrackingsystem\\childgts_group02.dal\\entities\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.bll\\childgts_group02.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DD0B7043-DFB2-4941-ACCD-08D716B16BE4}|ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj|solutionrelative:childgts_group02.bll\\childgts_group02.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02.dal\\entities\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B6910EC4-BFC0-4AAD-B320-0F092774608F}|ChildGTS_Group02.DAL\\ChildGTS_Group02.DAL.csproj|solutionrelative:childgts_group02.dal\\entities\\child.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|d:\\prn212_block3w\\team-project\\childgrowthtrackingsystem\\childgts_group02\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E01BC9E5-0838-470B-B6BB-C513A46FFC98}|ChildGTS_Group02\\ChildGTS_Group02.csproj|solutionrelative:childgts_group02\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\GrowthDataShareWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02\\GrowthDataShareWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\InvoiceWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02\\InvoiceWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MembershipRegisterWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02\\MembershipRegisterWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\ChildFormWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02\\ChildFormWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\CreditCardWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02\\CreditCardWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorDetailWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02\\DoctorDetailWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\ChildService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02.BLL\\Services\\ChildService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DoctorPositionRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02.DAL\\Repositories\\DoctorPositionRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DataShareReposirory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02.DAL\\Repositories\\DataShareReposirory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\BlogRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02.DAL\\Repositories\\BlogRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\ChildRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ChildGTS_Group02.DAL\\Repositories\\ChildRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -107,34 +199,49 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MemberWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\MemberWindow.xaml",
-              "RelativeDocumentMoniker": "ChildGTS_Group02\\MemberWindow.xaml",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\MemberWindow.xaml",
-              "RelativeToolTip": "ChildGTS_Group02\\MemberWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T13:10:45.859Z",
+              "Title": "FeedbackRatingService.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\FeedbackRatingService.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.BLL\\Services\\FeedbackRatingService.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\FeedbackRatingService.cs",
+              "RelativeToolTip": "ChildGTS_Group02.BLL\\Services\\FeedbackRatingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:55:55.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "ChildGTS_Group02\\MainWindow.xaml",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml",
-              "RelativeToolTip": "ChildGTS_Group02\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T05:44:54.347Z",
+              "DocumentIndex": 2,
+              "Title": "FeedbackRatingRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\FeedbackRatingRepository.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\FeedbackRatingRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\FeedbackRatingRepository.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\FeedbackRatingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:54:34.522Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
+              "Title": "DoctorWindow.xaml.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\DoctorWindow.xaml.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorWindow.xaml.cs",
+              "RelativeToolTip": "ChildGTS_Group02\\DoctorWindow.xaml.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAjwEoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:19:45.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "DoctorWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorWindow.xaml",
               "RelativeDocumentMoniker": "ChildGTS_Group02\\DoctorWindow.xaml",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorWindow.xaml",
               "RelativeToolTip": "ChildGTS_Group02\\DoctorWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-15T13:11:55.802Z",
@@ -142,23 +249,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\AdminWindow.xaml",
-              "RelativeDocumentMoniker": "ChildGTS_Group02\\AdminWindow.xaml",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\AdminWindow.xaml",
-              "RelativeToolTip": "ChildGTS_Group02\\AdminWindow.xaml",
+              "DocumentIndex": 5,
+              "Title": "MemberWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MemberWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\MemberWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MemberWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\MemberWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-15T13:19:23.351Z",
+              "WhenOpened": "2025-04-15T13:10:45.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "LoginWindow.xaml",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\LoginWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "ChildGTS_Group02\\LoginWindow.xaml",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\LoginWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\LoginWindow.xaml",
               "RelativeToolTip": "ChildGTS_Group02\\LoginWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-15T11:32:50.646Z",
@@ -166,37 +273,152 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
+              "Title": "GrowthRecordService.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\GrowthRecordService.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.BLL\\Services\\GrowthRecordService.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\GrowthRecordService.cs",
+              "RelativeToolTip": "ChildGTS_Group02.BLL\\Services\\GrowthRecordService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:02:50.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\appsettings.json",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\appsettings.json",
               "RelativeDocumentMoniker": "ChildGTS_Group02\\appsettings.json",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\appsettings.json",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\appsettings.json",
               "RelativeToolTip": "ChildGTS_Group02\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAChAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-15T06:09:02.147Z",
+              "WhenOpened": "2025-04-20T15:38:16.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GrowthRecordRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\GrowthRecordRepository.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\GrowthRecordRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\GrowthRecordRepository.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\GrowthRecordRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:58:14.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorFeedbackService.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\DoctorFeedbackService.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.BLL\\Services\\DoctorFeedbackService.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\DoctorFeedbackService.cs",
+              "RelativeToolTip": "ChildGTS_Group02.BLL\\Services\\DoctorFeedbackService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:30:32.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DoctorFeedbackRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DoctorFeedbackRepository.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\DoctorFeedbackRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DoctorFeedbackRepository.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\DoctorFeedbackRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:26:13.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AdminWindow.xaml.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\AdminWindow.xaml.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\AdminWindow.xaml.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\AdminWindow.xaml.cs",
+              "RelativeToolTip": "ChildGTS_Group02\\AdminWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:44:28.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\AdminWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\AdminWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\AdminWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\AdminWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T13:19:23.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\UserRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\UserRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-15T10:00:52.511Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\MainWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T05:44:54.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DoctorFeedback.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\DoctorFeedback.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Entities\\DoctorFeedback.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\DoctorFeedback.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Entities\\DoctorFeedback.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T16:27:50.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HealthAlert.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\HealthAlert.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Entities\\HealthAlert.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\HealthAlert.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Entities\\HealthAlert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:56:18.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\UserService.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "ChildGTS_Group02.BLL\\Services\\UserService.cs",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\UserService.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\UserService.cs",
               "RelativeToolTip": "ChildGTS_Group02.BLL\\Services\\UserService.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -205,37 +427,198 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ChildGTS_Group02\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "ChildGTS_Group02\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA3wAkAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T12:07:07.714Z",
+              "DocumentIndex": 15,
+              "Title": "efpt.config.json",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\efpt.config.json",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\efpt.config.json",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\efpt.config.json",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\efpt.config.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-20T14:52:05.062Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 26,
+              "Title": "InvoiceWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\InvoiceWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\InvoiceWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\InvoiceWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\InvoiceWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T15:23:36.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MembershipRegisterWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MembershipRegisterWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\MembershipRegisterWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MembershipRegisterWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\MembershipRegisterWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T15:23:24.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DoctorDetailWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorDetailWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\DoctorDetailWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\DoctorDetailWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\DoctorDetailWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T15:17:02.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CreditCardWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\CreditCardWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\CreditCardWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\CreditCardWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\CreditCardWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T15:17:16.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ChildFormWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\ChildFormWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\ChildFormWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\ChildFormWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\ChildFormWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T15:17:18.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GrowthDataShareWindow.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\GrowthDataShareWindow.xaml",
+              "RelativeDocumentMoniker": "ChildGTS_Group02\\GrowthDataShareWindow.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\GrowthDataShareWindow.xaml",
+              "RelativeToolTip": "ChildGTS_Group02\\GrowthDataShareWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-20T15:23:39.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ChildService.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\ChildService.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.BLL\\Services\\ChildService.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\Services\\ChildService.cs",
+              "RelativeToolTip": "ChildGTS_Group02.BLL\\Services\\ChildService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAqwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:11:32.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DoctorPositionRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DoctorPositionRepository.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\DoctorPositionRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DoctorPositionRepository.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\DoctorPositionRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:08:30.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DataShareReposirory.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DataShareReposirory.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\DataShareReposirory.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\DataShareReposirory.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\DataShareReposirory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:08:05.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\BlogRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\BlogRepository.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\BlogRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:03:52.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ChildRepository.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\ChildRepository.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Repositories\\ChildRepository.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Repositories\\ChildRepository.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Repositories\\ChildRepository.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAqwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T15:00:53.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ChildGTS_Group02.BLL.csproj",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj",
+              "RelativeToolTip": "ChildGTS_Group02.BLL\\ChildGTS_Group02.BLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-20T14:52:54.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\Blog.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Entities\\Blog.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\Blog.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\Entities\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T14:52:49.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChildGrowthTrackingSystemDBContext.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
+              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
+              "RelativeToolTip": "ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAuwC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T09:55:19.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "ChildGTS_Group02\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\MainWindow.xaml.cs",
               "RelativeToolTip": "ChildGTS_Group02\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAuwBUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T05:44:51.469Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T05:44:51.469Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\App.xaml",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\App.xaml",
               "RelativeDocumentMoniker": "ChildGTS_Group02\\App.xaml",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02\\App.xaml",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02\\App.xaml",
               "RelativeToolTip": "ChildGTS_Group02\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-04-15T12:28:15.709Z",
@@ -243,29 +626,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ChildGrowthTrackingSystemDBContext.cs",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
-              "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
-              "RelativeToolTip": "ChildGTS_Group02.DAL\\ChildGrowthTrackingSystemDBContext.cs",
-              "ViewState": "AgIAAHUBAAAAAAAAAAAuwC0AAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T09:55:19.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 22,
               "Title": "Child.cs",
-              "DocumentMoniker": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\Child.cs",
+              "DocumentMoniker": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\Child.cs",
               "RelativeDocumentMoniker": "ChildGTS_Group02.DAL\\Entities\\Child.cs",
-              "ToolTip": "D:\\Code\\C#_Dev\\Session11-GroupProject\\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\Child.cs",
+              "ToolTip": "D:\\PRN212_BLOCK3W\\Team-Project\\ChildGrowthTrackingSystem\\ChildGTS_Group02.DAL\\Entities\\Child.cs",
               "RelativeToolTip": "ChildGTS_Group02.DAL\\Entities\\Child.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-15T09:57:06.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-15T09:57:06.768Z"
             }
           ]
         }
