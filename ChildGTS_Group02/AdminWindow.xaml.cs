@@ -25,6 +25,7 @@ namespace ChildGTS_Group02
         private UserService _userService = new();
         private ChildService _childService = new();
         private PaymentService _paymentService = new();
+        private BlogService _blogService = new();
 
         public AdminWindow()
         {
@@ -92,9 +93,26 @@ namespace ChildGTS_Group02
                 "Delete confirm", MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.No)
                 return;
-            _userService.DeleteDoctor(selectedUser.UserId);
-            LoadDataToGrid();
+
+            try
+            {
+                var blogs = _blogService.GetAllBlogsByUserId(selectedUser.UserId);
+                foreach (var blog in blogs)
+                {
+                    _blogService.Delete(blog);
+                }
+                _userService.DeleteDoctor(selectedUser.UserId);
+
+                MessageBox.Show("Doctor deleted successfully.");
+                LoadDataToGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
+
 
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {

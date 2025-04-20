@@ -29,8 +29,6 @@ public partial class Child
 
     public string MedicalNotes { get; set; }
 
-    public virtual ICollection<DataShare> DataShares { get; set; } = new List<DataShare>();
-
     public virtual ICollection<GrowthRecord> GrowthRecords { get; set; } = new List<GrowthRecord>();
 
     public virtual ICollection<HealthAlert> HealthAlerts { get; set; } = new List<HealthAlert>();

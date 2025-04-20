@@ -8,20 +8,33 @@ using System.Threading.Tasks;
 
 namespace ChildGTS_Group02.BLL.Services
 {
-   public  class GrowRecordService
+   public class GrowRecordService
     {
 
-        private GrowRecordRepository _growRecordRepository;
+        private GrowRecordRepository _growRecordRepository = new();
 
-
-        public GrowRecordService()
+        public List<GrowthRecord> GetAllGrowthRecords()
         {
-            _growRecordRepository = new GrowRecordRepository();
+            return _growRecordRepository.GetAll();
         }
-
-
+        public List<GrowthRecord> GetGrowthRecordsByChildId(int childId)
+        {
+            return _growRecordRepository.GetRecordsByChildId(childId);
+        }
+        public GrowthRecord? GetGrowthRecordById(int? recordId)
+        {
+            return _growRecordRepository.GetRecordById(recordId);
+        }
         public void AddRecord(GrowthRecord growthRecord) {
             _growRecordRepository.Create(growthRecord);
+        }
+        public void UpdateRecord(GrowthRecord growthRecord)
+        {
+            _growRecordRepository.Update(growthRecord);
+        }
+        public void Delete(GrowthRecord growthRecord)
+        {
+            _growRecordRepository.Delete(growthRecord);
         }
 
 

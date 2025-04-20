@@ -5,8 +5,77 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChildGTS_Group02"
         mc:Ignorable="d"
-        Title="DoctorWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
-    <Grid>
-        
+        Title="DoctorWindow" Height="788" Width="1000" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="DoctorWindow_Loaded">
+    <Grid Margin="0,0,0,-6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="10,10,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Child Growth Tracking System" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Grid.Column="0" />
+            <Button Content="Logout" Width="100" HorizontalAlignment="Center" Click="LogoutButton_Click" Grid.Column="1" RenderTransformOrigin="-2.021,-4.123" />
+        </Grid>
+
+        <DataGrid x:Name="dgGrowthRecords"
+                  AutoGenerateColumns="False"
+                  Margin="10,10,10,127"
+                  Grid.Row="1"
+                  SelectionMode="Single"
+                  SelectionChanged="dgGrowthRecords_SelectionChanged" Grid.ColumnSpan="2" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Record ID" Binding="{Binding RecordId}" Width="*"/>
+                <DataGridTextColumn Header="Tên trẻ" Binding="{Binding Child.FullName}" Width="*"/>
+                <DataGridTextColumn Header="Ngày ghi nhận" Binding="{Binding RecordDate}" Width="*"/>
+                <DataGridTextColumn Header="Chiều cao (cm)" Binding="{Binding Height}" Width="*"/>
+                <DataGridTextColumn Header="Cân nặng (kg)" Binding="{Binding Weight}" Width="*"/>
+                <DataGridTextColumn Header="Vòng đầu (cm)" Binding="{Binding HeadCircumference}" Width="*"/>
+                <DataGridTextColumn Header="BMI" Binding="{Binding Bmi}" Width="*"/>
+                <DataGridTextColumn Header="Loại đo" Binding="{Binding MeasurementType}" Width="*"/>
+                <DataGridTextColumn Header="Ghi chú" Binding="{Binding Notes}" Width="*"/>
+                <DataGridTextColumn Header="Trạng thái" Binding="{Binding Status}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Border Grid.Row="1" Margin="10,435,10,34" BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <StackPanel Margin="9,9,11,-59">
+                <TextBlock Text="Feedback cho bản ghi đã chọn" FontWeight="Bold" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Comments:" Width="120" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbComments" Width="400"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Recommendations:" Width="120" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbRecommendations" Width="400"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="FollowUpDate:" Width="120" VerticalAlignment="Center"/>
+                    <DatePicker x:Name="dpFollowUpDate" Width="150"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Attachments:" Width="120" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbAttachments" Width="300"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Priority:" Width="120" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbPriority" Width="200"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="ParentAcknowledged:" Width="120" VerticalAlignment="Center"/>
+                    <CheckBox x:Name="cbParentAcknowledged"/>
+                </StackPanel>
+                <Button Content="Gửi Feedback" Width="150" Margin="0,10,0,0" HorizontalAlignment="Left" Click="BtnSubmitFeedback_Click"/>
+            </StackPanel>
+        </Border>
+        <Label x:Name="HelloMessageLabel" Content="Hello " HorizontalAlignment="Left" Margin="502,11,0,0" VerticalAlignment="Top" Height="48" Width="306" FontSize="20" RenderTransformOrigin="0.62,0.571" Grid.Column="1"/>
     </Grid>
 </Window>

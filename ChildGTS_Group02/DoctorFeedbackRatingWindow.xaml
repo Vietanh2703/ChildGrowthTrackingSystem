@@ -1,0 +1,60 @@
+﻿<Window x:Class="ChildGTS_Group02.DoctorFeedbackRatingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChildGTS_Group02"
+        mc:Ignorable="d"
+        Title="DoctorFeedbackRatingWindow" Height="750" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="DoctorFeedbackRatingWindow_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Doctor's Feedback" 
+               FontSize="20" 
+               FontWeight="Bold" 
+               HorizontalAlignment="Left" 
+               Margin="10,27,0,337" 
+               Grid.Row="0" Width="231" Grid.RowSpan="2"/>
+
+        <DataGrid x:Name="dgDoctorFeedbacks"
+              AutoGenerateColumns="False"
+              Margin="10,78,10,187"
+              Grid.Row="1"
+              SelectionMode="Single"
+              SelectionChanged="dgDoctorFeedbacks_SelectionChanged" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Feedback ID" Binding="{Binding FeedbackId}" Width="*"/>
+                <DataGridTextColumn Header="Ngày phản hồi" Binding="{Binding FeedbackDate}" Width="*"/>
+                <DataGridTextColumn Header="Comments" Binding="{Binding Comments}" Width="2*"/>
+                <DataGridTextColumn Header="Recommendations" Binding="{Binding Recommendations}" Width="2*"/>
+                <DataGridTextColumn Header="FollowUpDate" Binding="{Binding FollowUpDate}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                <DataGridTextColumn Header="Priority" Binding="{Binding Priority}" Width="*"/>
+                <DataGridTextColumn Header="ParentAcknowledged" Binding="{Binding ParentAcknowledged}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Border Grid.Row="2" Margin="10,92,10,10" BorderBrush="Gray" BorderThickness="1" CornerRadius="5">
+            <StackPanel Margin="10,9,10,10">
+                <TextBlock Text="Đánh giá phản hồi của bác sĩ" FontWeight="Bold" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Điểm đánh giá (1-5):" Width="150" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbRating" Width="100"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock Text="Nhận xét thêm:" Width="150" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbRatingComment" Width="412" Height="66"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0,10,0,0">
+                    <Button x:Name="SubmitButton" Content="Submit" Width="150" Margin="0,0,10,0" Click="BtnSubmitRating_Click"/>
+                    <Button x:Name="BackButton" Content="Back" Width="150" Click="BtnBack_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>

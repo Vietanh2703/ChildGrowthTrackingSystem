@@ -24,11 +24,11 @@ namespace ChildGTS_Group02.DAL.Repositories
                 .ToList();
         }
 
-        public List<Child> Search(string childName)
+        public List<Child> Search(string childName, int parentId)
         {
             return _context.Children
                 .Include(c => c.Parent)
-                .Where(c => c.FullName.ToLower().Contains(childName.ToLower()))
+                .Where(c => c.ParentId == parentId && c.FullName.ToLower().Contains(childName.ToLower()))
                 .ToList();
         }
 
@@ -72,9 +72,11 @@ namespace ChildGTS_Group02.DAL.Repositories
 
 
 
-        public async Task<Child> GetChilById(int id)
+        public List<Child> GetChildrenByParentId(int parentId)
         {
-            return await _context.Children.FirstOrDefaultAsync(c => c.ChildId == id);
+            return _context.Children
+                .Where(c => c.ParentId == parentId)
+                .ToList();
         }
 
         public void Update(Child child)

@@ -104,12 +104,6 @@ namespace ChildGTS_Group02.BLL.Services
             }
         }
 
-        public List<User> GetDoctors()
-        {
-
-            return _userRepository.GetDoctors();
-
-        }
 
         public async Task<User> GetUserByIdAsync(int userId)
         {

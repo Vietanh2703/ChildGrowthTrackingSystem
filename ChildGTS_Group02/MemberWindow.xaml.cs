@@ -22,7 +22,9 @@ namespace ChildGTS_Group02
     public partial class MemberWindow : Window
     {
 
-        private readonly ChildService _childService = new();
+        private ChildService _childService = new();
+        private HealthAlertService _healthAlertService = new();
+        private GrowRecordService _growRecordService = new();
         public User? User { get; set; }
 
         public MemberWindow()
@@ -72,6 +74,7 @@ namespace ChildGTS_Group02
         {
             var selectedChild = ChildrenDataGrid.SelectedItem as Child;
             int userId = User.UserId;
+
             if (selectedChild != null)
             {
                 var result = MessageBox.Show("You wanna delete this child?", "Confirm,plz", MessageBoxButton.YesNo, MessageBoxImage.Question);
@@ -80,7 +83,19 @@ namespace ChildGTS_Group02
                 {
                     try
                     {
-                        _childService.Delete(selectedChild); 
+                        var healthAlerts = _healthAlertService.GetAllHealthAlertsByChildId(selectedChild.ChildId);
+                        foreach (var alert in healthAlerts)
+                        {
+                            _healthAlertService.Delete(alert);
+                        }
+                        var growthRecords = _growRecordService.GetGrowthRecordsByChildId(selectedChild.ChildId);
+                        foreach (var record in growthRecords)
+                        {
+                            _growRecordService.Delete(record);
+                        }
+                        _childService.Delete(selectedChild);
+
+                        MessageBox.Show("Child deleted successfully.");
                         LoadChildren(userId);
                     }
                     catch (Exception ex)
@@ -93,8 +108,6 @@ namespace ChildGTS_Group02
             {
                 MessageBox.Show("Choose children,plz.");
             }
-
-            LoadChildren(userId);
         }
 
         private void LogoutButton_Click(object sender, RoutedEventArgs e)
@@ -112,8 +125,16 @@ namespace ChildGTS_Group02
                 LoadChildren(User.UserId);
                 return;
             }
-            var searchResults = _childService.Search(searchText);
+            var searchResults = _childService.Search(searchText,User.UserId);
             ChildrenDataGrid.ItemsSource = searchResults;
+
+        }
+
+        private void BtnViewDoctorFeedback_Click(object sender, RoutedEventArgs e)
+        {
+            DoctorFeedbackRatingWindow x = new();
+            x.User = User;
+            x.ShowDialog();
 
         }
     }

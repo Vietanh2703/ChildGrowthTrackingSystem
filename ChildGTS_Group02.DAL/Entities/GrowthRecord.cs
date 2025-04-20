@@ -30,4 +30,6 @@ public partial class GrowthRecord
     public string Status { get; set; }
 
     public virtual Child Child { get; set; }
+
+    public virtual ICollection<DoctorFeedback> DoctorFeedbacks { get; set; } = new List<DoctorFeedback>();
 }

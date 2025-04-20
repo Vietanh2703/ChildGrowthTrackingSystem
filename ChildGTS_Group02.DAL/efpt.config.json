@@ -23,10 +23,6 @@
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[DataShare]",
-         "ObjectType": 0
-      },
-      {
          "Name": "[dbo].[DoctorFeedback]",
          "ObjectType": 0
       },

@@ -16,5 +16,13 @@ namespace ChildGTS_Group02.BLL.Services
         {
             return _blogRepository.GetAllBlogs();
         }
+        public List<Blog>? GetAllBlogsByUserId(int userId)
+        {
+            return _blogRepository.GetAllBlogsByUserId(userId);
+        }
+        public void Delete(Blog blog)
+        {
+            _blogRepository.Delete(blog);
+        }
     }
 }

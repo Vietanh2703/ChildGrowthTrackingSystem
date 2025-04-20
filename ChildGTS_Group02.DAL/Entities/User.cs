@@ -35,8 +35,6 @@ public partial class User
 
     public virtual ICollection<Child> Children { get; set; } = new List<Child>();
 
-    public virtual ICollection<DataShare> DataShares { get; set; } = new List<DataShare>();
-
     public virtual ICollection<FeedbackRating> FeedbackRatings { get; set; } = new List<FeedbackRating>();
 
     public virtual ICollection<HealthAlert> HealthAlerts { get; set; } = new List<HealthAlert>();

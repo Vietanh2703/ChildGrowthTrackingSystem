@@ -9,7 +9,7 @@ public partial class DoctorFeedback
 {
     public int FeedbackId { get; set; }
 
-    public int ShareId { get; set; }
+    public int GrowthRecordId { get; set; }
 
     public DateTime? FeedbackDate { get; set; }
 
@@ -31,5 +31,5 @@ public partial class DoctorFeedback
 
     public virtual ICollection<FeedbackRating> FeedbackRatings { get; set; } = new List<FeedbackRating>();
 
-    public virtual DataShare Share { get; set; }
+    public virtual GrowthRecord GrowthRecord { get; set; }
 }

@@ -8,10 +8,8 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Nội dung cuộn -->
         <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
             <StackPanel>
-                <!-- Các trường cơ bản -->
                 <TextBlock Text="Full Name" />
                 <TextBox x:Name="FullNameTextBox" />
 

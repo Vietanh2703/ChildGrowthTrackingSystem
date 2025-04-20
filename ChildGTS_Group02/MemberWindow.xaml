@@ -37,7 +37,6 @@
         <!-- DataGrid Section -->
         <DataGrid x:Name="ChildrenDataGrid" AutoGenerateColumns="False" Margin="10,94,10,92" Grid.Row="1" Grid.RowSpan="2">
             <DataGrid.Columns>
-                <!-- Columns remain unchanged -->
                 <DataGridTextColumn Header="Child's Name" Binding="{Binding FullName}" Width="150"/>
                 <DataGridTextColumn Header="Date of Birth" Binding="{Binding DateOfBirth}" Width="*"/>
                 <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" Width="70"/>
@@ -50,7 +49,6 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <!-- Footer Section -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Grid.Row="2">
             <Button Content="Add Child" x:Name="CreateBtn" Width="120" Height="40" Margin="10,0" 
                     Background="#4CAF50" Foreground="White" FontWeight="Bold" BorderBrush="#388E3C" 
@@ -58,7 +56,11 @@
             <Button Content="Update and View Details" x:Name="UpdateBtn" Width="160" Height="40" Margin="10,0" 
                     Background="#2196F3" Foreground="White" FontWeight="Bold" BorderBrush="#1976D2" 
                     BorderThickness="1" Click="UpdateBtn_Click"/>
-            <Button Content="Delete Child" x:Name="DeleteBtn" Width="120" Height="40" Margin="10,0" 
+            <Button Content="View Doctor Feedback" 
+        VerticalAlignment="Bottom" 
+        Margin="10" 
+        Click="BtnViewDoctorFeedback_Click" Height="41" Width="154" Background="#FFC3B52F" Foreground="White" FontWeight="Bold" />
+            <Button Content="Delete Child" x:Name="DeleteBtn" Width="125" Height="44" Margin="10,0" 
                     Background="#F44336" Foreground="White" FontWeight="Bold" BorderBrush="#D32F2F" 
                     BorderThickness="1" Click="DeleteBtn_Click"/>
         </StackPanel>

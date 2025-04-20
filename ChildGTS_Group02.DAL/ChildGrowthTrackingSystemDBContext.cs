@@ -9,20 +9,17 @@ namespace ChildGTS_Group02.DAL.Entities;
 
 public partial class ChildGrowthTrackingSystemDBContext : DbContext
 {
-    public ChildGrowthTrackingSystemDBContext(DbContextOptions<ChildGrowthTrackingSystemDBContext> options)
-        : base(options)
+    public ChildGrowthTrackingSystemDBContext()
     {
     }
-
-    public ChildGrowthTrackingSystemDBContext()
+    public ChildGrowthTrackingSystemDBContext(DbContextOptions<ChildGrowthTrackingSystemDBContext> options)
+        : base(options)
     {
     }
 
     public virtual DbSet<Blog> Blogs { get; set; }
 
     public virtual DbSet<Child> Children { get; set; }
-
-    public virtual DbSet<DataShare> DataShares { get; set; }
 
     public virtual DbSet<DoctorFeedback> DoctorFeedbacks { get; set; }
 
@@ -60,12 +57,11 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
             optionsBuilder.UseSqlServer(GetConnectionString());
         }
     }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Blog>(entity =>
         {
-            entity.HasKey(e => e.BlogId).HasName("PK__Blog__54379E50DA344FDE");
+            entity.HasKey(e => e.BlogId).HasName("PK__Blog__54379E50E93C15F9");
 
             entity.ToTable("Blog");
 
@@ -89,12 +85,12 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
             entity.HasOne(d => d.Author).WithMany(p => p.Blogs)
                 .HasForeignKey(d => d.AuthorId)
-                .HasConstraintName("FK__Blog__AuthorID__70DDC3D8");
+                .HasConstraintName("FK__Blog__AuthorID__6A30C649");
         });
 
         modelBuilder.Entity<Child>(entity =>
         {
-            entity.HasKey(e => e.ChildId).HasName("PK__Child__BEFA07363B262668");
+            entity.HasKey(e => e.ChildId).HasName("PK__Child__BEFA0736F3C687CD");
 
             entity.ToTable("Child");
 
@@ -118,39 +114,9 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
                 .HasConstraintName("FK__Child__ParentID__4D94879B");
         });
 
-        modelBuilder.Entity<DataShare>(entity =>
-        {
-            entity.HasKey(e => e.ShareId).HasName("PK__DataShar__D32A3F8EFFC9F5B4");
-
-            entity.ToTable("DataShare");
-
-            entity.Property(e => e.ShareId).HasColumnName("ShareID");
-            entity.Property(e => e.AccessLevel).HasMaxLength(20);
-            entity.Property(e => e.ChildId).HasColumnName("ChildID");
-            entity.Property(e => e.DoctorId).HasColumnName("DoctorID");
-            entity.Property(e => e.ExpiryDate).HasColumnType("datetime");
-            entity.Property(e => e.LastAccessed).HasColumnType("datetime");
-            entity.Property(e => e.ShareDate)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-            entity.Property(e => e.ShareStatus)
-                .HasMaxLength(20)
-                .HasDefaultValue("Active");
-
-            entity.HasOne(d => d.Child).WithMany(p => p.DataShares)
-                .HasForeignKey(d => d.ChildId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__DataShare__Child__5DCAEF64");
-
-            entity.HasOne(d => d.Doctor).WithMany(p => p.DataShares)
-                .HasForeignKey(d => d.DoctorId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__DataShare__Docto__5EBF139D");
-        });
-
         modelBuilder.Entity<DoctorFeedback>(entity =>
         {
-            entity.HasKey(e => e.FeedbackId).HasName("PK__DoctorFe__6A4BEDF6ABC26604");
+            entity.HasKey(e => e.FeedbackId).HasName("PK__DoctorFe__6A4BEDF61D567F22");
 
             entity.ToTable("DoctorFeedback");
 
@@ -160,26 +126,26 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
             entity.Property(e => e.FollowUpDate).HasColumnType("datetime");
+            entity.Property(e => e.GrowthRecordId).HasColumnName("GrowthRecordID");
             entity.Property(e => e.ParentAcknowledged).HasDefaultValue(false);
             entity.Property(e => e.Priority).HasMaxLength(20);
-            entity.Property(e => e.ShareId).HasColumnName("ShareID");
             entity.Property(e => e.Status)
                 .HasMaxLength(20)
                 .HasDefaultValue("Pending");
 
-            entity.HasOne(d => d.Share).WithMany(p => p.DoctorFeedbacks)
-                .HasForeignKey(d => d.ShareId)
+            entity.HasOne(d => d.GrowthRecord).WithMany(p => p.DoctorFeedbacks)
+                .HasForeignKey(d => d.GrowthRecordId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__DoctorFee__Share__6477ECF3");
+                .HasConstraintName("FK__DoctorFee__Growt__5DCAEF64");
         });
 
         modelBuilder.Entity<DoctorPosition>(entity =>
         {
-            entity.HasKey(e => e.PositionId).HasName("PK__DoctorPo__60BB9A59CA0A5C14");
+            entity.HasKey(e => e.PositionId).HasName("PK__DoctorPo__60BB9A59626B07FE");
 
             entity.ToTable("DoctorPosition");
 
-            entity.HasIndex(e => e.PositionName, "UQ__DoctorPo__E46AEF42E0ABBDBA").IsUnique();
+            entity.HasIndex(e => e.PositionName, "UQ__DoctorPo__E46AEF426C7E2E2A").IsUnique();
 
             entity.Property(e => e.PositionId).HasColumnName("PositionID");
             entity.Property(e => e.CreatedDate)
@@ -194,7 +160,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<FeedbackRating>(entity =>
         {
-            entity.HasKey(e => e.RatingId).HasName("PK__Feedback__FCCDF85C169DEF3F");
+            entity.HasKey(e => e.RatingId).HasName("PK__Feedback__FCCDF85C215F3DE4");
 
             entity.ToTable("FeedbackRating");
 
@@ -214,17 +180,17 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
             entity.HasOne(d => d.Feedback).WithMany(p => p.FeedbackRatings)
                 .HasForeignKey(d => d.FeedbackId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__FeedbackR__Feedb__778AC167");
+                .HasConstraintName("FK__FeedbackR__Feedb__70DDC3D8");
 
             entity.HasOne(d => d.User).WithMany(p => p.FeedbackRatings)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__FeedbackR__UserI__787EE5A0");
+                .HasConstraintName("FK__FeedbackR__UserI__71D1E811");
         });
 
         modelBuilder.Entity<GrowthRecord>(entity =>
         {
-            entity.HasKey(e => e.RecordId).HasName("PK__GrowthRe__FBDF78C9F32F7965");
+            entity.HasKey(e => e.RecordId).HasName("PK__GrowthRe__FBDF78C9BCF6E797");
 
             entity.ToTable("GrowthRecord");
 
@@ -255,7 +221,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<HealthAlert>(entity =>
         {
-            entity.HasKey(e => e.AlertId).HasName("PK__HealthAl__EBB16AED826B3EBA");
+            entity.HasKey(e => e.AlertId).HasName("PK__HealthAl__EBB16AED1B72BBC4");
 
             entity.ToTable("HealthAlert");
 
@@ -288,7 +254,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<MembershipPackage>(entity =>
         {
-            entity.HasKey(e => e.PackageId).HasName("PK__Membersh__322035ECCE092DB1");
+            entity.HasKey(e => e.PackageId).HasName("PK__Membersh__322035EC723A5B64");
 
             entity.ToTable("MembershipPackage");
 
@@ -307,7 +273,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<Payment>(entity =>
         {
-            entity.HasKey(e => e.PaymentId).HasName("PK__Payment__9B556A5832908430");
+            entity.HasKey(e => e.PaymentId).HasName("PK__Payment__9B556A58A065FA99");
 
             entity.ToTable("Payment");
 
@@ -331,21 +297,21 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
             entity.HasOne(d => d.Package).WithMany(p => p.Payments)
                 .HasForeignKey(d => d.PackageId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Payment__Package__6C190EBB");
+                .HasConstraintName("FK__Payment__Package__656C112C");
 
             entity.HasOne(d => d.User).WithMany(p => p.Payments)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Payment__UserID__6B24EA82");
+                .HasConstraintName("FK__Payment__UserID__6477ECF3");
         });
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.HasKey(e => e.RoleId).HasName("PK__Role__8AFACE3A39B3DA52");
+            entity.HasKey(e => e.RoleId).HasName("PK__Role__8AFACE3A43AAB8EB");
 
             entity.ToTable("Role");
 
-            entity.HasIndex(e => e.RoleName, "UQ__Role__8A2B61600A74F94D").IsUnique();
+            entity.HasIndex(e => e.RoleName, "UQ__Role__8A2B616064FD5493").IsUnique();
 
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
             entity.Property(e => e.CreatedDate)
@@ -360,11 +326,11 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__User__1788CCACF3A6C054");
+            entity.HasKey(e => e.UserId).HasName("PK__User__1788CCAC2FFDC409");
 
             entity.ToTable("User");
 
-            entity.HasIndex(e => e.Email, "UQ__User__A9D10534DEA55E55").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__User__A9D10534FE0FF40B").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.Address).HasMaxLength(250);

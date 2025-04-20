@@ -21,9 +21,9 @@ namespace ChildGTS_Group02.BLL.Services
             return _childRepository.GetAllChildrenByUserId(userId);
         }
 
-        public List<Child> Search(string childName)
+        public List<Child> Search(string childName, int parentId)
         {
-            return _childRepository.Search(childName);
+            return _childRepository.Search(childName, parentId);
         }
 
         public Child? GetChildById(int childId)
