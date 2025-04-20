@@ -2,7 +2,6 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace ChildGTS_Group02.DAL.Entities;
 
@@ -14,28 +13,19 @@ public partial class GrowthRecord
 
     public DateTime? RecordDate { get; set; }
 
-    [Required(ErrorMessage = "Height is required.")]
-    [Range(0.1, double.MaxValue, ErrorMessage = "Height must be greater than 0.")]
     public decimal Height { get; set; }
 
-    [Required(ErrorMessage = "Weight is required.")]
-    [Range(0.1, double.MaxValue, ErrorMessage = "Weight must be greater than 0.")]
     public decimal Weight { get; set; }
 
-    [Range(0.1, double.MaxValue, ErrorMessage = "Head circumference must be greater than 0.")]
     public decimal? HeadCircumference { get; set; }
 
-    [Range(0.1, double.MaxValue, ErrorMessage = "BMI must be greater than 0.")]
     public decimal? Bmi { get; set; }
 
-    [Required(ErrorMessage = "Measurement Type is required.")]
-    [StringLength(100, ErrorMessage = "Measurement Type cannot exceed 100 characters.")]
     public string MeasurementType { get; set; }
 
-    [StringLength(500, ErrorMessage = "Notes cannot exceed 500 characters.")]
     public string Notes { get; set; }
 
-    public int? RecordedBy { get; set; }
+    public string RecordedBy { get; set; }
 
     public string Status { get; set; }
 

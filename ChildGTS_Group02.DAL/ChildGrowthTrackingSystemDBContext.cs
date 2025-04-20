@@ -9,12 +9,12 @@ namespace ChildGTS_Group02.DAL.Entities;
 
 public partial class ChildGrowthTrackingSystemDBContext : DbContext
 {
-    public ChildGrowthTrackingSystemDBContext()
+    public ChildGrowthTrackingSystemDBContext(DbContextOptions<ChildGrowthTrackingSystemDBContext> options)
+        : base(options)
     {
     }
 
-    public ChildGrowthTrackingSystemDBContext(DbContextOptions<ChildGrowthTrackingSystemDBContext> options)
-        : base(options)
+    public ChildGrowthTrackingSystemDBContext()
     {
     }
 
@@ -65,7 +65,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
     {
         modelBuilder.Entity<Blog>(entity =>
         {
-            entity.HasKey(e => e.BlogId).HasName("PK__Blog__54379E5055BF668F");
+            entity.HasKey(e => e.BlogId).HasName("PK__Blog__54379E50DA344FDE");
 
             entity.ToTable("Blog");
 
@@ -94,7 +94,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<Child>(entity =>
         {
-            entity.HasKey(e => e.ChildId).HasName("PK__Child__BEFA0736A88091F4");
+            entity.HasKey(e => e.ChildId).HasName("PK__Child__BEFA07363B262668");
 
             entity.ToTable("Child");
 
@@ -120,7 +120,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<DataShare>(entity =>
         {
-            entity.HasKey(e => e.ShareId).HasName("PK__DataShar__D32A3F8E0409BCD9");
+            entity.HasKey(e => e.ShareId).HasName("PK__DataShar__D32A3F8EFFC9F5B4");
 
             entity.ToTable("DataShare");
 
@@ -150,7 +150,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<DoctorFeedback>(entity =>
         {
-            entity.HasKey(e => e.FeedbackId).HasName("PK__DoctorFe__6A4BEDF6EC86E6EF");
+            entity.HasKey(e => e.FeedbackId).HasName("PK__DoctorFe__6A4BEDF6ABC26604");
 
             entity.ToTable("DoctorFeedback");
 
@@ -175,11 +175,11 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<DoctorPosition>(entity =>
         {
-            entity.HasKey(e => e.PositionId).HasName("PK__DoctorPo__60BB9A59AB406E5E");
+            entity.HasKey(e => e.PositionId).HasName("PK__DoctorPo__60BB9A59CA0A5C14");
 
             entity.ToTable("DoctorPosition");
 
-            entity.HasIndex(e => e.PositionName, "UQ__DoctorPo__E46AEF4289AFECAD").IsUnique();
+            entity.HasIndex(e => e.PositionName, "UQ__DoctorPo__E46AEF42E0ABBDBA").IsUnique();
 
             entity.Property(e => e.PositionId).HasColumnName("PositionID");
             entity.Property(e => e.CreatedDate)
@@ -194,7 +194,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<FeedbackRating>(entity =>
         {
-            entity.HasKey(e => e.RatingId).HasName("PK__Feedback__FCCDF85C2B8DB0D4");
+            entity.HasKey(e => e.RatingId).HasName("PK__Feedback__FCCDF85C169DEF3F");
 
             entity.ToTable("FeedbackRating");
 
@@ -224,7 +224,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<GrowthRecord>(entity =>
         {
-            entity.HasKey(e => e.RecordId).HasName("PK__GrowthRe__FBDF78C90CE614BA");
+            entity.HasKey(e => e.RecordId).HasName("PK__GrowthRe__FBDF78C9F32F7965");
 
             entity.ToTable("GrowthRecord");
 
@@ -241,6 +241,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
             entity.Property(e => e.RecordDate)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime");
+            entity.Property(e => e.RecordedBy).HasMaxLength(20);
             entity.Property(e => e.Status)
                 .HasMaxLength(20)
                 .HasDefaultValue("Active");
@@ -254,7 +255,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<HealthAlert>(entity =>
         {
-            entity.HasKey(e => e.AlertId).HasName("PK__HealthAl__EBB16AED41759D54");
+            entity.HasKey(e => e.AlertId).HasName("PK__HealthAl__EBB16AED826B3EBA");
 
             entity.ToTable("HealthAlert");
 
@@ -287,7 +288,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<MembershipPackage>(entity =>
         {
-            entity.HasKey(e => e.PackageId).HasName("PK__Membersh__322035ECB47F0560");
+            entity.HasKey(e => e.PackageId).HasName("PK__Membersh__322035ECCE092DB1");
 
             entity.ToTable("MembershipPackage");
 
@@ -306,7 +307,7 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<Payment>(entity =>
         {
-            entity.HasKey(e => e.PaymentId).HasName("PK__Payment__9B556A588063F821");
+            entity.HasKey(e => e.PaymentId).HasName("PK__Payment__9B556A5832908430");
 
             entity.ToTable("Payment");
 
@@ -340,11 +341,11 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<Role>(entity =>
         {
-            entity.HasKey(e => e.RoleId).HasName("PK__Role__8AFACE3A8EDB488E");
+            entity.HasKey(e => e.RoleId).HasName("PK__Role__8AFACE3A39B3DA52");
 
             entity.ToTable("Role");
 
-            entity.HasIndex(e => e.RoleName, "UQ__Role__8A2B6160556A087F").IsUnique();
+            entity.HasIndex(e => e.RoleName, "UQ__Role__8A2B61600A74F94D").IsUnique();
 
             entity.Property(e => e.RoleId).HasColumnName("RoleID");
             entity.Property(e => e.CreatedDate)
@@ -359,11 +360,11 @@ public partial class ChildGrowthTrackingSystemDBContext : DbContext
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity.HasKey(e => e.UserId).HasName("PK__User__1788CCACDFC1DE34");
+            entity.HasKey(e => e.UserId).HasName("PK__User__1788CCACF3A6C054");
 
             entity.ToTable("User");
 
-            entity.HasIndex(e => e.Email, "UQ__User__A9D105340A2BFF74").IsUnique();
+            entity.HasIndex(e => e.Email, "UQ__User__A9D10534DEA55E55").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
             entity.Property(e => e.Address).HasMaxLength(250);

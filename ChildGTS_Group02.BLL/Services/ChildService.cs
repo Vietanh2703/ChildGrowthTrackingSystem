@@ -15,10 +15,50 @@ namespace ChildGTS_Group02.BLL.Services
         {
             return _childRepository.GetAllChildren();
         }
+
+        public List<Child> GetAllChildrenByUserId(int userId)
+        {
+            return _childRepository.GetAllChildrenByUserId(userId);
+        }
+
+        public List<Child> Search(string childName)
+        {
+            return _childRepository.Search(childName);
+        }
+
         public Child? GetChildById(int childId)
         {
             return _childRepository.GetChildById(childId);
         }
-        
+
+        public async Task<List<Child>> GetAllChildrenAndParent()
+        {
+            return await _childRepository.GetAllChildrenAndParentAsync();
+        }
+
+        public void Create(Child child)
+        {
+           _childRepository.Create(child);
+        }
+
+        public void Delete(Child child)
+        {
+            _childRepository.Delete(child);
+        }
+
+        public void Update(Child child)
+        {
+            _childRepository.Update(child);
+        }
+
+
+
+        public List<GrowthRecord> GetChildRelatedData(int childId)
+        {
+            return _childRepository.GetChildRelatedDataAsync(childId);
+
+
+        }
+
     }
 }

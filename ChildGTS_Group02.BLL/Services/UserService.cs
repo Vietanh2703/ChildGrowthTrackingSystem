@@ -103,5 +103,17 @@ namespace ChildGTS_Group02.BLL.Services
                 _userRepository.DeleteUser(user);
             }
         }
+
+        public List<User> GetDoctors()
+        {
+
+            return _userRepository.GetDoctors();
+
+        }
+
+        public async Task<User> GetUserByIdAsync(int userId)
+        {
+            return await _userRepository.GetUserByIdAsync(userId);
+        }
     }
 }

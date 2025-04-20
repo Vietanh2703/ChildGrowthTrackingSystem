@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChildGTS_Group02"
         mc:Ignorable="d"
-        Title="MemberWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="MemberWindow" Height="750" Width="1145" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="MemberWindow_Loaded">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Grid Grid.Row="0" Height="60">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Child Growth Tracking System" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,651,0" Grid.Column="0"/>
+            <Button Content="Log out" x:Name="LogoutButton" Width="120" Height="40" Margin="0,10,10,0" 
+            HorizontalAlignment="Right" VerticalAlignment="Center" Background="#F44336" 
+            Foreground="White" FontWeight="Bold" BorderBrush="#D32F2F" BorderThickness="1" 
+            Click="LogoutButton_Click" Grid.Column="1"/>
+        </Grid>
+        <StackPanel Orientation="Horizontal" Margin="10,10,10,579" Grid.Row="2">
+            <TextBox x:Name="SearchTextBox" Width="300" Height="30" Margin="0,0,10,0" 
+             VerticalAlignment="Center"/>
+            <Button Content="Search" x:Name="SearchButton" Width="100" Height="30" 
+            Background="#2196F3" Foreground="White" FontWeight="Bold" 
+            BorderBrush="#1976D2" BorderThickness="1" Click="SearchButton_Click"/>
+        </StackPanel>
+        <!-- DataGrid Section -->
+        <DataGrid x:Name="ChildrenDataGrid" AutoGenerateColumns="False" Margin="10,94,10,92" Grid.Row="1" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <!-- Columns remain unchanged -->
+                <DataGridTextColumn Header="Child's Name" Binding="{Binding FullName}" Width="150"/>
+                <DataGridTextColumn Header="Date of Birth" Binding="{Binding DateOfBirth}" Width="*"/>
+                <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" Width="70"/>
+                <DataGridTextColumn Header="Birth Weight (kg)" Binding="{Binding BirthWeight}" Width="*"/>
+                <DataGridTextColumn Header="Birth Height (cm)" Binding="{Binding BirthHeight}" Width="*"/>
+                <DataGridTextColumn Header="Profile Created Date" Binding="{Binding CreatedDate}" Width="150"/>
+                <DataGridTextColumn Header="Last Checkup Date" Binding="{Binding LastCheckupDate}" Width="150"/>
+                <DataGridTextColumn Header="Medical Notes" Binding="{Binding MedicalNotes}" Width="*"/>
+                <DataGridTextColumn Header="Parent's Name" Binding="{Binding Parent.FullName}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Footer Section -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Grid.Row="2">
+            <Button Content="Add Child" x:Name="CreateBtn" Width="120" Height="40" Margin="10,0" 
+                    Background="#4CAF50" Foreground="White" FontWeight="Bold" BorderBrush="#388E3C" 
+                    BorderThickness="1" Click="CreateBtn_Click"/>
+            <Button Content="Update and View Details" x:Name="UpdateBtn" Width="160" Height="40" Margin="10,0" 
+                    Background="#2196F3" Foreground="White" FontWeight="Bold" BorderBrush="#1976D2" 
+                    BorderThickness="1" Click="UpdateBtn_Click"/>
+            <Button Content="Delete Child" x:Name="DeleteBtn" Width="120" Height="40" Margin="10,0" 
+                    Background="#F44336" Foreground="White" FontWeight="Bold" BorderBrush="#D32F2F" 
+                    BorderThickness="1" Click="DeleteBtn_Click"/>
+        </StackPanel>
+        <Label x:Name="HelloMessageLabel" Content="Hello " HorizontalAlignment="Left" Margin="691,18,0,0" VerticalAlignment="Top" Height="48" Width="306" FontSize="20" RenderTransformOrigin="0.62,0.571"/>
     </Grid>
 </Window>

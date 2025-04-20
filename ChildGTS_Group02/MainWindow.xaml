@@ -62,6 +62,10 @@
                 </TextBlock>
 
                 <!-- Blog DataGrid -->
+                <TextBlock Text="Blog list"
+           FontSize="18"
+           FontWeight="Bold"
+           Margin="0,0,0,10"/>
                 <DataGrid Name="BlogDataGrid"
           AutoGenerateColumns="False"
           CanUserAddRows="False"

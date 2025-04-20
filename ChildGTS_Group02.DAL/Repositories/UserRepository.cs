@@ -77,5 +77,27 @@ namespace ChildGTS_Group02.DAL.Repositories
             _context = new ChildGrowthTrackingSystemDBContext();
             return _context.Users.Any(u => u.Email == email);
         }
+
+        public List<User> GetDoctors()
+        {
+            // Lấy danh sách DataShare với DoctorId
+            var dataShares = _context.DataShares
+                                    .Where(ds => ds.ShareStatus == "Active")
+                                    .ToList();
+
+            // Lấy các bác sĩ từ bảng Users
+            var doctorIds = dataShares.Select(ds => ds.DoctorId).Distinct().ToList();
+            var doctors = _context.Users
+                                 .Where(u => doctorIds.Contains(u.UserId) && u.RoleId.Equals(2))
+                                 .ToList();
+
+            return doctors;
+        }
+
+        public async Task<User> GetUserByIdAsync(int userId)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.UserId == userId);
+        }
+
     }
 }
