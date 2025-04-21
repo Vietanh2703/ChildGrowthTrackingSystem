@@ -10,8 +10,8 @@
 
         <Label Content="Password" Foreground="#FF00B25F" HorizontalAlignment="Left" Margin="50,180,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="15" />
         <StackPanel Margin="50,210,50,0" VerticalAlignment="Top">
-            <PasswordBox x:Name="PasswordHiddenBox" Height="30" FontSize="14"   BorderBrush="#97E6C1" />
-            <TextBox x:Name="PasswordShowBox" Height="30" FontSize="14"   BorderBrush="#97E6C1" Visibility="Collapsed" VerticalContentAlignment="Center" />
+            <PasswordBox x:Name="PasswordHiddenBox" Height="30" FontSize="14"   BorderBrush="#97E6C1" Foreground="#FF35B723" />
+            <TextBox x:Name="PasswordShowBox" Height="30" FontSize="14"   BorderBrush="#97E6C1" Visibility="Collapsed" VerticalContentAlignment="Center" Foreground="#FF25CC23" />
             <CheckBox x:Name="CheckBoxHide" Content="Show Password" Foreground="#02BE68" Margin="0,10,0,0" Checked="CheckBoxHide_Checked" Unchecked="CheckBoxHide_Unchecked" />
         </StackPanel>
 

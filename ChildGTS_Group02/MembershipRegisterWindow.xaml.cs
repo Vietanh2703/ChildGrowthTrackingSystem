@@ -206,8 +206,8 @@ namespace ChildGTS_Group02
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
             var email = EmailTextBox.Text;
-            var password = PasswordBox.Password;
-            var confirmPassword = ConfirmPasswordBox.Password;
+            var password = PasswordTextBox.Visibility == Visibility.Visible ? PasswordTextBox.Text : PasswordBox.Password;
+            var confirmPassword = ConfirmPasswordTextBox.Visibility == Visibility.Visible ? ConfirmPasswordTextBox.Text : ConfirmPasswordBox.Password;
             var fullName = FullNameTextBox.Text;
             var phone = PhoneTextBox.Text;
             var address = AddressTextBox.Text;
@@ -217,6 +217,7 @@ namespace ChildGTS_Group02
                 MessageBox.Show("Password and Confirm Password do not match.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+
 
             bool isTrial = _selectedPackageBorder == Package1Border ? true : false;
             int packageID = _selectedPackageBorder == Package1Border ? 1 : 2;
@@ -243,7 +244,7 @@ namespace ChildGTS_Group02
                 PackageID = packageID,
                 Price = price
             };
-            creditCardWindow.Show();
+            creditCardWindow.ShowDialog();
 
             this.Close();
         }

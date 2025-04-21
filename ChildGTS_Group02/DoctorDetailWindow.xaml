@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChildGTS_Group02"
         mc:Ignorable="d"
-        Title="DoctorDetailWindow" Height="750" Width="1145" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Title="Doctor detail" Height="750" Width="1145" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="DoctorModeLabel" Content="Create | Update Doctor" HorizontalAlignment="Left" Height="80" Margin="31,20,0,0" VerticalAlignment="Top" Width="659" FontWeight="Heavy" FontSize="50"/>
         <Rectangle HorizontalAlignment="Left" Height="584" Margin="38,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="875" Fill="#FFD7D7D7"/>

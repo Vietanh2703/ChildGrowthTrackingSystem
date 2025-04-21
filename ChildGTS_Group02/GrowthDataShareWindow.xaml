@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChildGTS_Group02"
         mc:Ignorable="d"
-        Title="GrowthDataShareWindow" Height="572" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="GrowthDataWindow_Loaded">
+        Title="Growth data input" Height="572" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="GrowthDataWindow_Loaded">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
         <Grid Margin="20">
             <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Width="500" >

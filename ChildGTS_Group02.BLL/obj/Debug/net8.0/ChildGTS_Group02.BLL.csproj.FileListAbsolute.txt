@@ -1,0 +1,16 @@
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\bin\Debug\net8.0\ChildGTS_Group02.BLL.deps.json
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\bin\Debug\net8.0\ChildGTS_Group02.BLL.dll
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\bin\Debug\net8.0\ChildGTS_Group02.BLL.pdb
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\bin\Debug\net8.0\ChildGTS_Group02.DAL.dll
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\bin\Debug\net8.0\ChildGTS_Group02.DAL.pdb
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.csproj.AssemblyReference.cache
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.AssemblyInfoInputs.cache
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.AssemblyInfo.cs
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.csproj.CoreCompileInputs.cache
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.sourcelink.json
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS.011F685F.Up2Date
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.dll
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\refint\ChildGTS_Group02.BLL.dll
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ChildGTS_Group02.BLL.pdb
+D:\Code\C#_Dev\Session11-GroupProject\PRJ_PRN212_SP25_ChildGrowthTrackingSystem\ChildGTS_Group02.BLL\obj\Debug\net8.0\ref\ChildGTS_Group02.BLL.dll

@@ -99,8 +99,8 @@ namespace ChildGTS_Group02
         {
             var doctorCode = DoctorCodeTextBox.Text.Trim();
             var email = EmailTextBox.Text.Trim();
-            var password = PasswordBox.Password.Trim();
-            var confirmPassword = ConfirmPasswordBox.Password.Trim();
+            var password = PasswordTextBox.Visibility == Visibility.Visible ? PasswordTextBox.Text : PasswordBox.Password;
+            var confirmPassword = ConfirmPasswordTextBox.Visibility == Visibility.Visible ? ConfirmPasswordTextBox.Text : ConfirmPasswordBox.Password;
             var fullName = DoctorNameTextBox.Text.Trim();
             var phone = PhoneTextBox.Text.Trim();
             var address = AddressTextBox.Text.Trim();
